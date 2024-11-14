@@ -4,7 +4,7 @@ function Random({ className = '', min, max }) {
   const randomNumber = Math.floor(Math.random() * (max - min) + min);
   return (
     <Panel className={className}>
-      Random value between {min} and {max} => {randomNumber}
+      Random value between {min} and {max} =&gt; {randomNumber}
     </Panel>
   )
 };
