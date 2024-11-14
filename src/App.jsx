@@ -1,3 +1,4 @@
+import Greetings from "./components/greetings/greetings";
 import IdCard from "./components/id-card/id-card";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         picture="https://randomuser.me/api/portraits/men/44.jpg"
       />
       <IdCard
+        className="mb-2"
         lastName='Doe'
         firstName='John'
         gender='male'
@@ -20,6 +22,9 @@ function App() {
         birth={new Date("1992-07-14")}
         picture="https://randomuser.me/api/portraits/men/44.jpg"
       />
+
+      <Greetings>Carlos</Greetings>
+      <Greetings lang="fr">Juli</Greetings>
     </div>
   );
 }
